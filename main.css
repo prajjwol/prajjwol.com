@@ -1,16 +1,40 @@
 body {
     background: #000000;
     color: #00FF00;
-    font-family: monospace
+    font-family: monospace;
+    margin: 0;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
 .hero-unit {
     text-align: center;
-    margin: 100px auto 40px;
-    width: 600px
+    width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
 }
+
 .hero-unit #links {
     margin-top: 20px
 }
+
 .hero-unit a,
 .hero-unit a:visited,
 .hero-unit a:hover {
@@ -19,6 +43,7 @@ body {
     color: #00FF00;
     margin-left: 20px
 }
+
 img {
     width: 100px;
     height: 100px
