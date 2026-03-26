@@ -84,10 +84,10 @@ function countNeighbors(grid, x, y) {
 }
 
 function draw() {
-    ctx.fillStyle = '#f8f9fa';
+    ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, width, height);
 
-    ctx.fillStyle = '#e9ecef'; // Subtle gray color
+    ctx.fillStyle = 'rgba(0, 255, 0, 0.2)'; // Green color with low opacity
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
             if (grid[i][j] == 1) {

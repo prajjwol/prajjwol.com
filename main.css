@@ -1,7 +1,7 @@
 body {
-    background: #f8f9fa;
-    color: #343a40;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #000000;
+    color: #00FF00;
+    font-family: monospace;
     margin: 0;
 }
 
@@ -25,30 +25,23 @@ body {
 
 .hero-unit {
     text-align: center;
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero-unit #links {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    margin-top: 20px
 }
 
 .hero-unit a,
-.hero-unit a:visited {
-    font-size: 16px;
-    text-decoration: none;
-    color: #007bff;
-    margin: 0 10px;
-    font-weight: 500;
-}
-
+.hero-unit a:visited,
 .hero-unit a:hover {
-    text-decoration: underline;
+    font-size: 14px;
+    text-decoration: none;
+    color: #00FF00;
+    margin-left: 20px
 }
 
 img {
