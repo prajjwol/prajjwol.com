@@ -87,7 +87,7 @@ function draw() {
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, width, height);
 
-    ctx.fillStyle = '#00FF00'; // Green color
+    ctx.fillStyle = 'rgba(0, 255, 0, 0.2)'; // Green color with low opacity
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
             if (grid[i][j] == 1) {
