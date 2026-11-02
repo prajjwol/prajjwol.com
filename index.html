@@ -3,22 +3,63 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prajjwol Gautam | Home</title>
-    <meta name="description" content="Prajjwol Gautam's Homepage">
+    <title>Prajjwol Gautam</title>
+    <meta name="description" content="Prajjwol Gautam">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23020503' stroke='%2300ff66' stroke-opacity='0.4' stroke-width='1.5'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-weight='600' font-size='15' fill='%2300ff66'%3EPG%3C/text%3E%3C/svg%3E">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
-    <div class="container">
-        <div class="hero-unit">
-            <h1>PRAJJWOL GAUTAM</h1>
-            <img src="glider.png" alt="">
-            <div id="links">
-                <a href="https://github.com/prajjwol">github</a>
-                <a href="https://www.linkedin.com/in/prajjwol">linkedin</a>
+    <canvas id="bg-canvas"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <main class="container">
+        <section class="hero" aria-label="Introduction">
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-tr" aria-hidden="true"></span>
+            <span class="corner corner-bl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+
+            <div class="monogram" aria-hidden="true">
+                <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="36,4 64,20 64,52 36,68 8,52 8,20" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.2"/>
+                    <polygon points="36,9 59.5,22.5 59.5,49.5 36,63 12.5,49.5 12.5,22.5" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="3 3"/>
+                    <!-- Vector 'P' -->
+                    <path d="M21 46 V26 H30.5 L33.5 29 V34.5 L30.5 37.5 H21" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+                    <!-- Vector 'G' -->
+                    <path d="M51 29.5 L48 26 H40.5 L37.5 29 V43 L40.5 46 H48.5 L51 43.5 V37 H44.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+                </svg>
             </div>
-        </div>
+
+            <h1 class="name">PRAJJWOL GAUTAM</h1>
+
+            <nav class="links" aria-label="Profiles">
+                <a href="https://github.com/prajjwol" target="_blank" rel="noopener noreferrer">github</a>
+                <span class="dot" aria-hidden="true">/</span>
+                <a href="https://www.linkedin.com/in/prajjwol" target="_blank" rel="noopener noreferrer">linkedin</a>
+                <span class="dot" aria-hidden="true">/</span>
+                <a href="https://x.com/prajjwolg" target="_blank" rel="noopener noreferrer">x</a>
+            </nav>
+
+            <div class="pilot-bar">
+                <button type="button" id="pilot-btn" class="pilot-btn">
+                    <span class="pilot-active">[ esc: autopilot ]</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls-hint" id="controls-hint" aria-hidden="true">
+        <span><b>W / ↑</b> thrust</span>
+        <span><b>A D / ← →</b> rotate</span>
+        <span><b>SPACE</b> fire</span>
+        <span><b>SHIFT</b> hyperspace</span>
+        <span><b>ESC</b> autopilot</span>
     </div>
-    <script type="module" src="bg.js"></script>
+
+    <script src="asteroids.js"></script>
 </body>
 </html>
